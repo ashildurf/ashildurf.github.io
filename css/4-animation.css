@@ -1,0 +1,37 @@
+body {
+    padding: 50px;
+    color: pink; 
+}
+    
+.box {
+   animation-name: mybox;
+   animation-duration: 10s; 
+   animation-timing-function: linear;
+   animation-iteration-count: infinite;
+   display: inline-block;
+   background: pink;
+   width: 200px;
+   height: 200px;
+   transition: transform 300ms ease-in-out;
+   transform: translate(200px, 150px) rotate(20deg);
+ 
+}
+
+.seconds {
+    width: 200px;
+    height: 4px;
+    background-color: black;
+    position: absolute;
+    top: 98px;
+    left: 0px;
+}
+
+   @keyframes mybox {
+       from {
+           transform: rotate(30deg);
+       }
+       to {
+           transform: rotate(180deg);
+       }
+   }
+       
