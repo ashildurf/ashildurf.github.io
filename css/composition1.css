@@ -1,0 +1,32 @@
+
+
+.planets {
+        display: block;
+        width: 550px;
+        height: 500px;
+        overflow: hidden;
+        text-indent:100%;
+        white-space: nowrap;
+        
+    }
+    
+    .imageBox {
+        position: relative;
+        overflow:hidden;
+    }
+    
+    .imageBox img
+    {
+
+ 
+    }
+    
+    .textbox
+    {
+        position:absolute;
+        top: 0;
+        left: 0;
+        width:100%;
+        height:100%;
+        transition: .5s;
+    }
