@@ -2,7 +2,7 @@ body {
     overflow-y: scroll;
     padding: 0;
     margin: 0;
-    font-family: Kirvy;
+    font-family: "Mononoki";
     font-size: 22px;
     width: 960px;
     text-align: center;
@@ -10,7 +10,15 @@ body {
 
 
 @font-face {
-    font-family:"Kirvy"; 
-    src: url('Kirvy.eot') format('embedded-opentype'),
-    url('Kirvy.otf') format('opentype');
+    font-family:"mononoki"; 
+    src: url('https://madmalik.github.io/mononoki/fonts/mononoki-Regular.eot?#iefix') format('embedded-opentype'),
+         url('https://madmalik.github.io/mononoki/fonts/mononoki-Regular.woff2') format('woff2'),
+         url('https://madmalik.github.io/mononoki/fonts/mononoki-Regular.woff') format('woff'),
+         url('https://madmalik.github.io/mononoki/fonts/mononoki-Regular.ttf')  format('truetype');
+    font-weight:normal;
+    font-style:normal;
+}
+
+.ace_editor {
+    font-family:mononoki!important;
 }
