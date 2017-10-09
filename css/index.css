@@ -1,0 +1,16 @@
+body {
+    overflow-y: scroll;
+    padding: 0;
+    margin: 0;
+    font-family: Kirvy;
+    font-size: 22px;
+    width: 960px;
+    text-align: center;
+}
+
+
+@font-face {
+    font-family:"Kirvy"; 
+    src: url('Kirvy.eot') format('embedded-opentype'),
+    url('Kirvy.otf') format('opentype');
+}
