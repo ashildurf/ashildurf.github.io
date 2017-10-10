@@ -1,8 +1,8 @@
-body {
+header {
     overflow-y: scroll;
     padding: 0;
     margin: 0;
-    font-family: "Mononoki";
+    font-family: "Akzidenz Grotesk";
     font-size: 22px;
     width: 960px;
     text-align: center;
@@ -10,15 +10,12 @@ body {
 
 
 @font-face {
-    font-family:"mononoki"; 
-    src: url('https://madmalik.github.io/mononoki/fonts/mononoki-Regular.eot?#iefix') format('embedded-opentype'),
-         url('https://madmalik.github.io/mononoki/fonts/mononoki-Regular.woff2') format('woff2'),
-         url('https://madmalik.github.io/mononoki/fonts/mononoki-Regular.woff') format('woff'),
-         url('https://madmalik.github.io/mononoki/fonts/mononoki-Regular.ttf')  format('truetype');
+    font-family:"Akzidenz Grotesk"; 
+    src: url('https://github.com/ashildurf/ashildurf.github.io/blob/master/fonts/Akzidenz%20Grotesk%20Black.ttf') format('ttf');
     font-weight:normal;
     font-style:normal;
 }
 
 .ace_editor {
-    font-family:mononoki!important;
+    font-family:akzidenzgrotesk!important;
 }
