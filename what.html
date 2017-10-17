@@ -1,0 +1,136 @@
+<html>
+<head>
+  <title>Changing elements</title>
+  <style>
+  
+  div {
+                width: 130px;
+                height: 130px;
+
+  }
+ 
+  .hexagon {
+        width: 142.5px;
+      height: 81.75px;
+      position: absolute;
+      top: 10%;
+      left: 60%;
+      background: #000;
+      transform: translate(-50%,-50%);
+  }
+  
+  .hexagon:before,.hexagon:after {
+      content: '';
+      width: 100%;
+      height:100%;
+      background: #000;
+      position:absolute;
+  }
+  
+  .hexagon:before
+  {
+      transform: rotate(60deg);
+  }
+  .hexagon:after
+  {
+      transform: rotate(-60deg);
+  }
+  
+  .hexagon, 
+  .hexagon:before,
+  .hexagon:after
+  {
+    background:transparent;
+    border:1px solid #000;
+    background: rgba(48,141,255,0.5);
+  }
+  
+  </style>
+  
+  <style> 
+  .hexagontwo {
+      position: absolute;
+      top: 10%;
+      left: 30%;
+      background: #000;
+      transform: translate(-50%,-50%);
+  }
+  
+  .hexagontwo:before,.hexagontwo:after {
+      content: '';
+      width: 100%;
+      height:100%;
+      background: #000;
+      position:absolute;
+  }
+  
+  .hexagontwo:before
+  {
+      transform: rotate(60deg);
+  }
+  .hexagontwo:after
+  {
+      transform: rotate(-60deg);
+  }
+  
+  .hexagontwo, 
+  .hexagontwo:before,
+  .hexagontwo:after
+  {
+    background:transparent;
+    border:1px solid #000;
+    background: rgba(48,141,255,0.5);
+  }
+
+h3 { text-align: center;}
+
+</style>
+
+<style> 
+
+  #memory_board{
+    background: #CCC;
+    border:6px solid #ffff;
+    width:800px;
+    height:540px;
+    padding:24px;
+    margin:0px auto;
+    align-content:center;
+}
+
+ .memory_board {
+  background: url(title_bg.jpg) no-repeat;
+  border: #000 1px solid;
+  width: 71px;
+  height: 71px;
+  float:left;
+  margin:10px;
+  padding:20px;
+  font-size:64px;
+  cursor:pointer;
+  text-align:center;
+}
+
+  </style>
+  
+
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+  
+
+ 
+  
+<div class="hexagon"></div>
+<div class="hexagontwo"></div>
+   
+   <script>
+   /* global $ */
+   
+ 
+   </script>
+   
+  </body>
+  
+</html>
