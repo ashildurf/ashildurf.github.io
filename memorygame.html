@@ -94,7 +94,7 @@
                       });
                   },
                   checkMatch: function() {
-                      if($('.selected').length === 2) {
+                      if($('.selected').length == 2) {
                     if($('.selected').first().data('cardValue') == $('.selected').last().data('cardValue')) {
                        
                        $('.selected').each(function(){
@@ -124,7 +124,7 @@
                   },
                   
                   checkWin: function() {
-                      if($('.unmatched').length===0) {
+                      if($('.unmatched').length==6) {
                           $('.container').html('<h1>You won</h1>');
                   }
                   }
