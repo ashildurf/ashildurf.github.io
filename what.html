@@ -6,6 +6,8 @@
   div {
                 width: 130px;
                 height: 130px;
+                margin: 5px;
+                float: left;
 
   }
  
@@ -45,13 +47,17 @@
     background: rgba(48,141,255,0.5);
   }
   
+  .rounded {
+    border-radius: 60px;
+  }
+  
   </style>
   
   <style> 
   .hexagontwo {
       position: absolute;
       top: 10%;
-      left: 30%;
+      left: 20%;
       background: #000;
       transform: translate(-50%,-50%);
   }
@@ -86,32 +92,7 @@ h3 { text-align: center;}
 
 </style>
 
-<style> 
 
-  #memory_board{
-    background: #CCC;
-    border:6px solid #ffff;
-    width:800px;
-    height:540px;
-    padding:24px;
-    margin:0px auto;
-    align-content:center;
-}
-
- .memory_board {
-  background: url(title_bg.jpg) no-repeat;
-  border: #000 1px solid;
-  width: 71px;
-  height: 71px;
-  float:left;
-  margin:10px;
-  padding:20px;
-  font-size:64px;
-  cursor:pointer;
-  text-align:center;
-}
-
-  </style>
   
 
   
@@ -124,10 +105,24 @@ h3 { text-align: center;}
   
 <div class="hexagon"></div>
 <div class="hexagontwo"></div>
+<div class="circle"></div>
+<div style="background-color:pink;"></div>
    
    <script>
    /* global $ */
    
+  $( ".hexagon div" ).mouseover(function() {
+    $( this ).css( "background-color", getRandomColor());
+  });
+  
+  function getRandomColor () {
+    // this function returns a string with format "rgb(000,000,000)" where 000 is an integer between 0 and 255
+    var random0to255 = function() {
+      return Math.floor(Math.random()*255);
+    }
+    return "rgb(" + random0to255() + "," + random0to255() + "," + random0to255() + ")";
+  }
+
  
    </script>
    
