@@ -5,24 +5,12 @@
  
     
     <style>
-       
-
-       
-       .toggle {
-           width: 20px;
-           height: 20px;
-           margin: 20px;
-           background-color: gray;
-           display: inline-block;
-           border-radius: 10px;
-           
-       }
-       
-       
-         .bluestars {
+        
+     
+           .bluestars {
            background-color: #87ceeb;
-           width: 2px;
-           height: 2px;
+           width: 3px;
+           height: 3px;
            border-radius: 4px;
            position: relative;
        }
@@ -30,29 +18,42 @@
        
        .pinkstars {
       background-color: pink;
-      width: 3px;
-      height: 3px; 
+      width: 5px;
+      height: 5px; 
       border-radius: 4px;
       position: relative;
        }
        
        
       .blueplanet {
-              display:block;
-              width:900px;
-              height:650px;
-              background-image: url('https://raw.githubusercontent.com/ashildurf/ashildurf.github.io/master/photos/planets/planet.jpg');
+              display:relative;
+              width:530px;
+              height:511px;
+              background-image: url('https://github.com/ashildurf/ashildurf.github.io/blob/master/photos/planets/planet.jpg?raw=true');
               overflow:hidden;
-              text-indent:100%;
+              text-indent:10%;
               white-space: nowrap;
               margin: auto;
               background-repeat: no-repeat;
+              transform: scale(0.5)
+              
               
       }
         
     body {
         background-color: black;
     }
+    
+    
+    .colorstars {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        border-radius: 5px;
+        background-color: green;
+        
+    }
+    
         
     </style>
     
@@ -68,14 +69,14 @@
       
        <div id="pinkstars"></div>
        <div id="bluestars"></div>
-       <div class="blueplanet"></div>
+       <div id="blueplanet"></div>
+       <div id="colorstars"></div>
        
        
     
     <script>
         
         /* global $ */
-        
         
         for (var i = 0; i< 100; i++) {
             $("#pinkstars").append("<div class='pinkstars'></div>");
@@ -86,7 +87,7 @@
             $("#bluestars").append("<div class='bluestars'></div>")
         }
         
-         for (var i = 0; i < 10; i++) {
+         for (var i = 0; i < 1; i++) {
             $("#blueplanet").append("<div class='blueplanet'></div>")
         }
 
@@ -100,8 +101,8 @@
         var positions = [];
         $('.pinkstars').each(function() {
             var coords = {
-                w: $(this).outerWidth(true),
-                h: $(this).outerHeight(true)
+                w: $(this).outerWidth(false),
+                h: $(this).outerHeight(false)
             };
             var success = false;
             while (!success)
@@ -140,8 +141,8 @@
         var positions = [];
         $('.bluestars').each(function() {
             var coords = {
-                w: $(this).outerWidth(true),
-                h: $(this).outerHeight(true)
+                w: $(this).outerWidth(false),
+                h: $(this).outerHeight(false)
             };
             var success = false;
             while (!success)
@@ -171,6 +172,14 @@
         });
         });
     
+    //Pick a random color for the stars
+     var colorArray = ["#cee870", "#9be4bb", "#f5bda5", "#a3fdfa", "#ffffbd"];
+         for (var i = 0; i < 100; i++) {
+            var hex = colorArray[Math.floor(Math.random() * colorArray.length)];
+            $("#colorstars").append("<div class='colorstars' style='background-color:" + hex + "';></div>");
+         }
+         
+         
          
      
     
