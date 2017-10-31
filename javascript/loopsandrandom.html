@@ -25,20 +25,31 @@
        }
        
        
-      .blueplanet {
-              display:relative;
-              width:530px;
-              height:511px;
-              background-image: url('https://github.com/ashildurf/ashildurf.github.io/blob/master/photos/planets/planet.jpg?raw=true');
-              overflow:hidden;
-              text-indent:10%;
-              white-space: nowrap;
-              margin: auto;
-              background-repeat: no-repeat;
-              transform: scale(0.5)
-              
-              
-      }
+       .blueplanet {
+         display: relative;
+         width: 530px;
+         height: 511px;
+         background-image: url('https://github.com/ashildurf/ashildurf.github.io/blob/master/photos/planets/planet.jpg?raw=true');
+         overflow: hidden;
+         white-space: nowrap;
+         margin: auto;
+         background-repeat: no-repeat;
+         transform: scale(0.8);
+         
+     } 
+     
+     .pinkplanet {
+         display: relative;
+         width: 530px;
+         height: 511px;
+         background-image: url('https://github.com/ashildurf/ashildurf.github.io/blob/master/photos/planets/planet2.jpg?raw=true');
+         overflow: hidden;
+         white-space: nowrap;
+         margin: auto;
+         background-repeat: no-repeat;
+         transform: scale(0.3);
+         
+     } 
         
     body {
         background-color: black;
@@ -54,6 +65,8 @@
         
     }
     
+    
+    
         
     </style>
     
@@ -66,11 +79,11 @@
         
         <h3>DOTS</h3>
        
-      
+       <div class="blueplanet"></div>
        <div id="pinkstars"></div>
        <div id="bluestars"></div>
-       <div id="blueplanet"></div>
        <div id="colorstars"></div>
+       <div class="pinkplanet"></div>
        
        
     
@@ -87,9 +100,7 @@
             $("#bluestars").append("<div class='bluestars'></div>")
         }
         
-         for (var i = 0; i < 1; i++) {
-            $("#blueplanet").append("<div class='blueplanet'></div>")
-        }
+    
 
    
         
