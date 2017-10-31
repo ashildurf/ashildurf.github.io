@@ -1,0 +1,203 @@
+<html>
+    
+    <head>
+    <title>Loops</title>
+ 
+    
+    <style>
+        
+     
+           .bluestars {
+           background-color: #87ceeb;
+           width: 3px;
+           height: 3px;
+           border-radius: 4px;
+           position: relative;
+       }
+       
+       
+       .pinkstars {
+      background-color: pink;
+      width: 5px;
+      height: 5px; 
+      border-radius: 4px;
+      position: relative;
+       }
+       
+       
+       .blueplanet {
+         display: relative;
+         width: 530px;
+         height: 511px;
+         background-image: url('https://github.com/ashildurf/ashildurf.github.io/blob/master/photos/planets/planet.jpg?raw=true');
+         overflow: hidden;
+         white-space: nowrap;
+         margin: auto;
+         background-repeat: no-repeat;
+         transform: scale(0.8);
+         
+     } 
+     
+     .pinkplanet {
+         display: relative;
+         width: 530px;
+         height: 511px;
+         background-image: url('https://github.com/ashildurf/ashildurf.github.io/blob/master/photos/planets/planet2.jpg?raw=true');
+         overflow: hidden;
+         white-space: nowrap;
+         margin: auto;
+         background-repeat: no-repeat;
+         transform: scale(0.3);
+         
+     } 
+        
+    body {
+        background-color: black;
+    }
+    
+    
+    .colorstars {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        border-radius: 5px;
+        background-color: green;
+        
+    }
+    
+    
+    
+        
+    </style>
+    
+   <script src="//code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    
+    </head>
+    
+    <body>
+        
+        <h3>DOTS</h3>
+       
+       <div class="blueplanet"></div>
+       <div id="pinkstars"></div>
+       <div id="bluestars"></div>
+       <div id="colorstars"></div>
+       <div class="pinkplanet"></div>
+       
+       
+    
+    <script>
+        
+        /* global $ */
+        
+        for (var i = 0; i< 100; i++) {
+            $("#pinkstars").append("<div class='pinkstars'></div>");
+            
+        }
+        
+        for (var i = 0; i < 100; i++) {
+            $("#bluestars").append("<div class='bluestars'></div>")
+        }
+        
+    
+
+   
+        
+        // Random positioning of pinkstars loop
+        
+        jQuery(document).ready(function() {
+        var containerW = 1500;
+        var containerH = 1500;
+        var positions = [];
+        $('.pinkstars').each(function() {
+            var coords = {
+                w: $(this).outerWidth(false),
+                h: $(this).outerHeight(false)
+            };
+            var success = false;
+            while (!success)
+            {
+                coords.x = parseInt(Math.random() * (containerW-coords.w));
+                coords.y = parseInt(Math.random() * (containerH-coords.h));
+                var success = true;
+                $.each(positions, function(){
+                //console.log(this);
+                    if (
+                        coords.x <= (this.x + this.w) &&
+                        (coords.x + coords.w) >= this.x &&
+                        coords.y <= (this.y + this.h) &&
+                        (coords.y + coords.h) >= this.y
+                    )
+                    {
+                        success = false;
+                        return false; //break .each if found
+                    }
+                });
+            }
+             positions.push(coords);
+            $(this).css({
+                top: coords.y + 'px',
+                left: coords.x + 'px'
+            });
+        });
+        });
+    
+    
+    // Random positioning of bluestars loop
+        
+        jQuery(document).ready(function() {
+        var containerW = 1500;
+        var containerH = 1500;
+        var positions = [];
+        $('.bluestars').each(function() {
+            var coords = {
+                w: $(this).outerWidth(false),
+                h: $(this).outerHeight(false)
+            };
+            var success = false;
+            while (!success)
+            {
+                coords.x = parseInt(Math.random() * (containerW-coords.w));
+                coords.y = parseInt(Math.random() * (containerH-coords.h));
+                var success = true;
+                $.each(positions, function(){
+                //console.log(this);
+                    if (
+                        coords.x <= (this.x + this.w) &&
+                        (coords.x + coords.w) >= this.x &&
+                        coords.y <= (this.y + this.h) &&
+                        (coords.y + coords.h) >= this.y
+                    )
+                    {
+                        success = false;
+                        return false; //break .each if found
+                    }
+                });
+            }
+             positions.push(coords);
+            $(this).css({
+                top: coords.y + 'px',
+                left: coords.x + 'px'
+            });
+        });
+        });
+    
+    //Pick a random color for the stars
+     var colorArray = ["#cee870", "#9be4bb", "#f5bda5", "#a3fdfa", "#ffffbd"];
+         for (var i = 0; i < 100; i++) {
+            var hex = colorArray[Math.floor(Math.random() * colorArray.length)];
+            $("#colorstars").append("<div class='colorstars' style='background-color:" + hex + "';></div>");
+         }
+         
+         
+         
+     
+    
+    </script>
+    
+    
+    
+    </body>
+    
+</html>
