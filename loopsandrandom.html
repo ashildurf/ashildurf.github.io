@@ -6,6 +6,7 @@
     
     <style>
         
+       
      
            .bluestars {
            background-color: #87ceeb;
@@ -32,7 +33,7 @@
          background-image: url('https://github.com/ashildurf/ashildurf.github.io/blob/master/photos/planets/planet.jpg?raw=true');
          overflow: hidden;
          white-space: nowrap;
-         margin: auto;
+         margin: 0px;
          background-repeat: no-repeat;
          transform: scale(0.4);
          
@@ -48,10 +49,8 @@
          margin: 0px;
          background-repeat: no-repeat;
          transform: scale(0.3);
-        
-         
      } 
-        
+     
     body {
         background-color: black;
     }
@@ -76,14 +75,16 @@
     
     <body>
         
-        <h3>DOTS</h3>
        
        <div class="blueplanet"></div>
        <div id="pinkstars"></div>
        <div id="bluestars"></div>
        <div id="colorstars"></div>
-       <div class="pinkplanet"></div>
+       <div id="pinkplanet"></div>
        <div id ="colorstars"></div>
+       <div class="pinkplanet"></div>
+       <div class="pinkplanet"></div>
+       
        
        
     
@@ -100,8 +101,9 @@
             $("#bluestars").append("<div class='bluestars'></div>")
         }
         
+        
+  
     
-
    
         
         // Random positioning of pinkstars loop
@@ -186,7 +188,7 @@
  
          
          //Pick a random color for the multi colored stars
-     var colorArray = ["#cee870", "#9be4bb", "#f5bda5", "#a3fdfa", "#ffffbd"];
+     var colorArray = ["#cee870", "#9be4bb", "#ff0000", "#a3fdfa", "#ffffbd"];
          for (var i = 0; i < 200; i++) {
             var hex = colorArray[Math.floor(Math.random() * colorArray.length)];
             $("#colorstars").append("<div class='colorstars' style='background-color:" + hex + "';></div>");
@@ -230,6 +232,48 @@
             });
         });
         });
+        
+         // Random positioning for colorstars
+        
+        jQuery(document).ready(function() {
+        var containerW = 1500;
+        var containerH = 1000;
+        var positions = [];
+        $('.pinkplanet').each(function() {
+            var coords = {
+                w: $(this).outerWidth(true),
+                h: $(this).outerHeight(true)
+            };
+            var success = false;
+            while (!success)
+            {
+                coords.x = parseInt(Math.random() * (containerW-coords.w));
+                coords.y = parseInt(Math.random() * (containerH-coords.h));
+                var success = true;
+                $.each(positions, function(){
+                //console.log(this);
+                    if (
+                        coords.x <= (this.x + this.w) &&
+                        (coords.x + coords.w) >= this.x &&
+                        coords.y <= (this.y + this.h) &&
+                        (coords.y + coords.h) >= this.y
+                    )
+                    {
+                        success = false;
+                        return false; 
+                    }
+                });
+            }
+             positions.push(coords);
+            $(this).css({
+                top: coords.y + 'px',
+                left: coords.x + 'px'
+            });
+        });
+        });
+        
+         
+    
     
     </script>
     
