@@ -37,15 +37,18 @@
        }
        
        
-       .blueplanet {
-           width: 200px;
-           height: 200px;
-           margin: auto;
-           float: left;
-           background-image: url('https://preview.c9users.io/ashildurf/homepage/photos/planets/planet.jpg?_c9_id=livepreview6&_c9_host=https://ide.c9.io');
-           overflow:hidden;
-           
-       }
+      .blueplanet {
+              display:block;
+              width:900px;
+              height:650px;
+              background-image: url('https://raw.githubusercontent.com/ashildurf/ashildurf.github.io/master/photos/planets/planet.jpg');
+              overflow:hidden;
+              text-indent:100%;
+              white-space: nowrap;
+              margin: auto;
+              background-repeat: no-repeat;
+              
+      }
         
     body {
         background-color: black;
@@ -66,22 +69,26 @@
        <div id="pinkstars"></div>
        <div id="bluestars"></div>
        <div class="blueplanet"></div>
+       
+       
     
     <script>
         
         /* global $ */
         
         
-        for (var i = 0; i< 900; i++) {
+        for (var i = 0; i< 100; i++) {
             $("#pinkstars").append("<div class='pinkstars'></div>");
             
         }
         
-        for (var i = 0; i < 2000; i++) {
+        for (var i = 0; i < 100; i++) {
             $("#bluestars").append("<div class='bluestars'></div>")
         }
         
-        
+         for (var i = 0; i < 10; i++) {
+            $("#blueplanet").append("<div class='blueplanet'></div>")
+        }
 
    
         
