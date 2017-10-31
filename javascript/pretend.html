@@ -1,0 +1,54 @@
+<html>
+    
+    <head>
+        
+    <title>prepend element</title>
+    
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+ 
+
+<style>
+    div {
+        width: 60px;
+        height:60px;
+        
+    }
+    
+    .example {
+        width: 100%
+    }
+    
+    img {
+        width: 50px;
+        
+    }
+    
+</style>
+   
+   </head>
+   
+   <body>
+       
+       <div class="example">
+           <div style="background-color:blue">
+           </div>
+
+   
+       
+       
+       
+          <script>
+          
+    /* global $ */
+    
+    $(".example div").click(function() {
+        $( this ) .prepend("<img src='http://moziru.com/images/elephant-clipart-baby-pink-2.png'>");
+    });
+     
+   </script>
+   
+   </body>
+   
+</html>
+
+

@@ -1,0 +1,62 @@
+<html>
+    
+    <head>
+    <title>Loops</title>
+    
+    <style>
+       
+       .toggle {
+           width: 20px;
+           height: 20px;
+           margin: 20px;
+           background-color: gray;
+           display: inline-block;
+           border-radius: 20px;
+           
+       }
+        
+    </style>
+    
+   <script src="//code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    
+    </head>
+    
+    <body>
+        
+        <h3>DOTS</h3>
+       
+       <div class="toggle"></div>
+       <div class="toggle"></div>
+       <div class="toggle"></div>
+       <div class="toggle"></div>
+       <div class="toggle"></div>
+       <div class="toggle"></div>
+       <div class="toggle"></div>
+       
+       
+    
+    <script>
+        
+        /* global $ */
+        
+        // basic loop
+       // for (var i = 0; i< 500; i++) {
+        //    $("#toggle").append("<div class='toggle'></div>");
+            
+       //s }
+        
+     
+        
+    $(".toggle" ).hover(function() {
+     $( "#toggle" ).append("<div class='toggle'></div>").effect( "shake" );
+    });
+        
+        
+    </script>
+    
+    
+    
+    </body>
+    
+</html>
