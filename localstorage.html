@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+    
+    <title>Order flowers</title>
+    
+    <style>
+        
+        body {
+            background-image: url('https://static1.squarespace.com/static/57e01e4f2e69cf3a18c51bbe/t/59f3a541692670df68741074/1509139783508/pampa-homepage.jpg?format=1500w');
+            background-repeat: no-repeat;
+            background-size: 1450px;
+            font-weight: bold;
+            top: 40px;
+            position: relative;
+        }
+        
+        form {
+            font-family: Helvetica;
+            font-weight: bold;
+            
+        }
+        
+        label {
+
+		    display: inline-block;
+    	    margin-bottom: 14px;
+    	    position: relative;
+    	    left: 500px;
+    	    top: 100px;
+    	    font-family: georgia;
+    	    
+        }
+        
+        .border {
+            position: absolute;
+            left: 400px;
+            top: 150px;
+            width: 600px;
+            height:350px;
+            background-color: white;
+            border-radius: 10px;
+            border: 2px solid #B2DFEE;
+            opacity: 0.5;
+            
+        }
+        
+        p {
+            margin: 0;
+        }
+        
+        input, textarea, select, quantity {
+            border: 1.5px solid #B2DFEE;
+            border-radius: 12px;
+            position: relative;
+
+        }
+        
+        
+       div {
+           font-size: 80px;
+           color: #7ac0cc;
+           
+           
+       }
+       
+      
+      .inputstyle {
+       border: 1.5px solid #B2DFEE;
+            border-radius: 12px;
+            width: 200px;
+            height: 60px; 
+            text-align: center;
+            
+            
+    }
+    
+
+    
+
+          
+        
+    </style>
+    
+        
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        
+    </head>
+    
+    <body>
+        
+    
+        
+        <div id="someonespecial"></div>
+        <div class="border"></div>
+        
+        <form id ="flower-form"></form>
+        <p><label id="name">Recipient's name: <input id="namefield" name="recipient"></label></p>
+        <p><label>E-mail address: <input type="email" name="addr" placeholder="@"></label></p>
+        <p><label> Pick a flower:
+		      <select name="flower">
+		        <option value="">Select...</option>
+		        <option value="Dahlias">Dahlia</option>
+		        <option value="Roses">Rose</option>
+		        <option value="Lilies">Lily</option>
+		        <option value="Peonies">Peonies</option>
+		        </select>
+		        
+		        <p><label> Quantity:
+		        <select name="quantity">
+		        <option value="">Select...</option>
+		        <option value="6">6</option>
+		        <option value="8">12</option>
+		        <option value="10">24</option>
+		        <option value="15">30</option>
+		        </select>
+		        
+		        <p><label id="name"> Recipient Address:
+		        <textarea rows="3" cols="30" name="address">
+		        </textarea>
+		        </label></p>
+		
+		        <p><label id="message"> Message for card: 
+		        <input class="inputstyle" input id="messagefield" 
+		        <textarea name="khaleesi" placeholder ="Happy birthday Khaleesi - Jon Snow">
+		        </textarea>
+		        </label></p>
+		        
+		        
+		        </label> </p>
+		        
+		        
+		        
+		 
+	
+        <script>
+			/* global $ */
+			/* global localStorage */
+			
+			var text = 'For that special someone...'
+			
+			var textElements = text.split("").map(function(c) {
+			    return $('<span id="' + c + '">' + c + '</span>');
+			});
+			
+			var el = $('#someonespecial');
+            var delay = 50; // For different letter delays.
+            textElements.forEach(function(e, i) {
+            el.append(e);
+            e.hide();
+            setTimeout(function() {
+            e.fadeIn(300)
+            }, 100 + i * delay)
+            })
+			
+			
+			   function store(){
+    			localStorage.setItem("name", $("#namefield")[0].value);
+    			location.reload(); // refresh the page
+    		}
+    		
+    		function clearData() {
+    			localStorage.clear();
+    			location.reload(); // refresh the page
+    		}
+    		
+    		if (localStorage.getItem("name")) {
+    			$("#namefield").hide();
+    			$("#name").append(localStorage.getItem("name"));
+    		}
+    		
+    		function store() {
+    		    localstorage.setItem("message", $("messagefield")[0].value);
+    		    location.reload(); // refresh 
+    		    }
+    		    
+    		 if (localStorage.getItem("message")) {
+    		     $("#messagefield").hide();
+    		     $("#message").append(localStorage.getItem("message"));
+    		 }
+    		
+    		
+    		
+			</script>
+			
+    </body>
+    
+</html>
