@@ -128,7 +128,6 @@
 		        </textarea>
 		        </label></p>
 		        
-		        
 		         <p><button onclick="store()" type="button">Submit order</button>
 		  <button onclick="clearData()" type="button">Clear data</button></p>
 		  
@@ -185,13 +184,7 @@
     		     $("#message").append(localStorage.getItem("message"));
     		 }
     		
-    		function store(){
-    			localStorage.setItem("name", $("#namefield")[0].value);
-    			location.reload(); // refresh the page
-    		}
-    		function clearData() {
-    			localStorage.clear();
-    			location.reload(); // refresh the page
+    		
     		
 			</script>
 			
