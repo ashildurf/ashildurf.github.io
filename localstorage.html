@@ -38,7 +38,7 @@
             left: 400px;
             top: 150px;
             width: 600px;
-            height:350px;
+            height:400px;
             background-color: white;
             border-radius: 10px;
             border: 2px solid #B2DFEE;
@@ -76,7 +76,18 @@
             
     }
     
-
+  button {
+      text-align: middle;
+      position: relative;
+      top: 115px;
+      left: 650px;
+      width: 100px;
+      height: 25px;
+      border-radius: 20px;
+      color: white;
+      background-color: #B2DFEE;
+      font-weight: bold;
+  }
     
 
           
@@ -114,7 +125,7 @@
 		        <option value="6">6</option>
 		        <option value="8">12</option>
 		        <option value="10">24</option>
-		        <option value="15">30</option>
+		        <option value="99">99</option>
 		        </select>
 		        
 		        <p><label id="name"> Recipient Address:
@@ -128,6 +139,7 @@
 		        </textarea>
 		        </label></p>
 		        
+		        
 		         <p><button onclick="store()" type="button">Submit order</button>
 		  <button onclick="clearData()" type="button">Clear data</button></p>
 		  
@@ -140,7 +152,7 @@
 	
         <script>
 			/* global $ */
-			/* global localStorage */
+			/* global LocalStorage */
 			
 			var text = 'For that special someone...'
 			
@@ -160,28 +172,28 @@
 			
 			
 			   function store(){
-    			localStorage.setItem("name", $("#namefield")[0].value);
-    			location.reload(); // refresh the page
+    			LocalStorage.setItem("name", $("#namefield")[0].value);
+    			LocalStorageocation.reload(); // refresh the page
     		}
     		
     		function clearData() {
-    			localStorage.clear();
+    			LocalStorage.clear();
     			location.reload(); // refresh the page
     		}
     		
-    		if (localStorage.getItem("name")) {
+    		if (LocalStorage.getItem("name")) {
     			$("#namefield").hide();
-    			$("#name").append(localStorage.getItem("name"));
+    			$("#name").append(LocalStorage.getItem("name"));
     		}
     		
     		function store() {
-    		    localstorage.setItem("message", $("messagefield")[0].value);
+    		    LocalStorage.setItem("message", $("messagefield")[0].value);
     		    location.reload(); // refresh 
     		    }
     		    
-    		 if (localStorage.getItem("message")) {
+    		 if (LocalStorage.getItem("message")) {
     		     $("#messagefield").hide();
-    		     $("#message").append(localStorage.getItem("message"));
+    		     $("#message").append(LocalStorage.getItem("message"));
     		 }
     		
     		
