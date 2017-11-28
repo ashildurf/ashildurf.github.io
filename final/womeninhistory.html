@@ -91,8 +91,6 @@
                 color: #ff14cc;
             }
             
-    
-            
              #hilma:hover {
                 color: #ff14cc;
             }
@@ -147,13 +145,19 @@
                   <div class="details">Vigdis Finnbogadottir is the first female president in the world. Vigdis served as the fourth president of Iceland from 1980 to 1996. Although the Icelandic presidency is largely a ceremonial position, she took an active role as environmental activist and fought for Icelandic language and culture, acting as a cultural ambassador in promoting the country. She emphasized the role of small nations and hosted the summit between US President Ronald Reagan and Soviet leader Mikhail Gorbachev in 1986. 
 
 In 1996 she became founding chair of the Council of Women World Leaders at the John F. Kennedy School of Government at Harvard University. Two years later she was appointed president of the United Nations Educational, Scientific and Cultural Organization World Commission on the Ethics of Scientific Knowledge and Technology. 
-
-Today as UNESCO Goodwill Ambassador she continues to fight for women’s rights, education and sustainability. She is convinced women can save the planet. </div>
+Today as UNESCO Goodwill Ambassador she continues to fight for women's rights, education and sustainability. She is convinced women can save the planet. </div>
                   </div> </li>
                   
                   
                   
-                  <li> <div id="Hilma">Hilma Af Klint</div> </li>
+                  <li> <div id="Hilma">Hilma Af Klint
+                  <div class="details">Was a Swedish artist and mystic. She may have been the first abstract painter in history but since her work wasn't discovered until 1985, 40 years after her death, Wassily Kandinsky has been presented as the first abstract painter. 
+                In fact, Hilma's work from the early 20th century pre-dates the first purely abstract paintings by Wassily Kandinsky, Piet Mondrian and Kazimir Malevich. 
+                </div>
+                 </li>
+                  
+                  
+                  
                   <li> <div id="Lovelace">Ada Lovelace</div> </li>     
                         
                         
@@ -176,7 +180,11 @@ Today as UNESCO Goodwill Ambassador she continues to fight for women’s rights,
         });
     });
    
-  
+  $(function() {
+        $("#Hilma").on('click', function() { 
+            $(this).parent().find('.details').slideToggle(300);
+        });
+    });
   
 </script>
         
