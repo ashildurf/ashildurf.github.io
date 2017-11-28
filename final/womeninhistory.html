@@ -4,10 +4,23 @@
     
     <head>
         
+        
+         <header>
+             
+            <a href="about.html">
+                <div class="link">
+                    <h1>WOMEN IN HISTORY</h1>
+                </div>
+                </a>
+                
+        </header>
     
-       
+        
         <link rel="stylesheet" href="https://use.typekit.net/urm4mgo.css">
-       
+        
+      
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      
        <style>
           
          
@@ -31,33 +44,16 @@
         }
         
        
-                
-        h2  {
-            font-family: "chiavettieri";
-            font-weight: 400;
-            font-style: normal;
-            font-size: 20px;
-            left: 40px;
-            position: relative;
-            
-        }        
-         
-        h3 {
-            font-family: "chiavettieri";
-            font-weight: 400;
-            font-style: normal;
-            font-size: 20px;
-            left: 600px;
-            top: -125;
-            position: relative; 
-            
-        }
         
         .small {
             position: relative;
             font-family: "chiavettieri";
             font-weight: 400;
-            font-size: 40px;
+            font-size: 30px;
+            position: absolute;
+            top: 800px;
+            left: 900px;
+            
             
         }
            
@@ -73,14 +69,40 @@
             
         }
            
+          .details {
+          font-family: "chiavettieri";
+          color: black;
+          font-size: 25px;
+          text-align: justify;
+          width: 800px;
+          }
+          
+         
+           
            /*Removes Bullet Points*/
            
            ul {
                list-style-type: none;
            }
             
-            ul:hover {
+            
+            
+            #pres:hover {
                 color: #ff14cc;
+            }
+            
+    
+            
+             #hilma:hover {
+                color: #ff14cc;
+            }
+            
+            #lovelace:hover {
+                color: #ff14cc;
+            }
+            
+            #sappho:hover {
+               color: #ff14cc; 
             }
             
             /*Removes blue underline header*/
@@ -98,75 +120,68 @@
     
     <body>
         
+        
+        <div>
+  
+        
         <div id ="Container">
             
     <div class="small">
+        
+        <ul>
+                    <li> <div id="sappho"> someone will remember us <br>
+                     <span style="padding-left:340px;">I say <br> </span>
+                      <span style="padding-left:340px;">even in another time </span>
+                                   </div> </li>
+            
+            
+        </ul>
+        
         </div>
                 
                     <div class="medium">
              
                     <ul>
-                    <li>First female president </li>
-                    <li>Hilma af Klint</li>
+                   
+                  <li> <div id="pres">First Woman President
+                  <div class="details">Vigdis Finnbogadottir is the first female president in the world. Vigdis served as the fourth president of Iceland from 1980 to 1996. Although the Icelandic presidency is largely a ceremonial position, she took an active role as environmental activist and fought for Icelandic language and culture, acting as a cultural ambassador in promoting the country. She emphasized the role of small nations and hosted the summit between US President Ronald Reagan and Soviet leader Mikhail Gorbachev in 1986. 
+
+In 1996 she became founding chair of the Council of Women World Leaders at the John F. Kennedy School of Government at Harvard University. Two years later she was appointed president of the United Nations Educational, Scientific and Cultural Organization World Commission on the Ethics of Scientific Knowledge and Technology. 
+
+Today as UNESCO Goodwill Ambassador she continues to fight for women’s rights, education and sustainability. She is convinced women can save the planet. </div>
+                  </div> </li>
+                  
+                  
+                  
+                  <li> <div id="Hilma">Hilma Af Klint</div> </li>
+                  <li> <div id="Lovelace">Ada Lovelace</div> </li>     
+                        
+                        
+                   
                     </ul>  
                
-               
-                    </div>
-                
-                
     
-            
-            
+               
+                    
+
     
         </div>
         
         <script>
         /* global $ */
         
-        
-     
+       $(function() {
+        $("#pres").on('click', function() { 
+            $(this).parent().find('.details').slideToggle(300);
+        });
+    });
+   
+  
   
 </script>
         
-        
-        <header>
-            
-            
-            <a href="about.html">
-                <div class="link">
-                    <h1>WOMEN IN HISTORY</h1>
-                </div>
-                </a>
-           
-            
-            
-        <!–– column 1 ––>
-        
-            <h2>
-                
-            You may have searched the web, books or any other<br>
-            medium for information about the great minds that <br>
-            paved the road to the fate of the world we live in tod- <br>
-            ay.
-            Most of these lists consists mostly or even comp-  <br>
-            letely of males. Does that mean women didn't contri- <br>
-            </h2>
-       
-            <h3>
-                bute to the innovations, art, leadership and discover- <br>
-            ies that got us to where we are today? No. Without th- <br>
-            em humankind wouldn't have achieved half the things they have. <br>
-            This website was made to honor these women and give <br>
-            them the recognition they deserve.
-                
-            </h3>
-       
-        </header>
-        
-    
     
     </body>
     
-   
     
 </html>
