@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+    <title>Politics</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <head>
+        
+        <style>
+        
+        
+        p {
+padding: 0 0 1em;
+}
+            
+             .small {
+            position: relative;
+            font-family: "chiavettieri";
+            font-weight: 400;
+            font-size: 40px;
+            margin: 40px;
+            padding: 30px;
+            cursor:pointer;
+            color: #000000;
+            
+            
+            }
+            
+            
+            .medium {
+            display: relative;
+            font-family: "chiavettieri";
+            font-weight: 400;
+            font-size: 60px;
+            margin: 30px;
+            position: relative;
+            cursor:pointer;
+            color: #000000;
+            list-style-type: none;
+            
+            }
+            
+            .details {
+          font-family: "chiavettieri";
+          color: black;
+          font-size: 22px;
+          text-align: justify;
+          padding: 5px 10px 95px;
+          position: relative;
+          top: -33px;
+          width: 500px;
+           -webkit-hyphens: auto;
+          -ms-hyphens: auto;
+           hyphens: auto; 
+         
+            }
+            
+            .pres:hover {
+                color: #ff14cc;
+              
+            }
+            
+          .pres {
+              padding: 5px 10px;
+              position: relative;
+              
+          }
+          
+         
+         .img1 {
+          background-image: url("https://upload.wikimedia.org/wikipedia/commons/a/ae/Vigdis_Finnbogadottir_%281985%29.jpg"); 
+         width:900px ;
+         height: 2000px;
+         position:relative;
+         background-repeat: no-repeat;
+         transform: scale(0.4);
+         top:-580px;
+         left:-180px;
+         
+         } 
+          
+            
+        </style>
+        
+        <link rel="stylesheet" href="https://use.typekit.net/urm4mgo.css">
+        
+      
+        
+        
+    </head>
+    
+    <body>
+        
+                
+            
+                <div class="small">
+                <p class="pres">The first woman president </p>
+                <div class="details">
+                Vigdis Finnbogadottir is the first female president in the world. Vigdis served as the fourth president of Iceland from 1980 to 1996.
+                Today as UNESCO Goodwill Ambassador she continues to fight for women's rights, education and sustainability. She is convinced women can save the planet.
+                
+                <div class="img1"></div>
+                </div>
+                </div>
+            
+                
+                
+         
+            
+
+        
+        <script type="text/javascript" src="jquery.js"></script>
+        <script type="text/javascript">
+        /* global $ */
+        
+        
+        $(document).ready(function()
+        {
+  //hide the all of the element with class details
+  $(".details").hide();
+  //toggle the componenet with class details
+  $(".pres").click(function()
+  {
+    $(this).next(".details").slideToggle(600);
+  });
+});
+
+</script>
+        
+    </body>
+    
+</html>
