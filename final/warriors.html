@@ -1,0 +1,230 @@
+<html>
+    
+    <title>Warriors</title>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://use.typekit.net/urm4mgo.css">
+    
+    <head>
+        
+        <style>
+            .small {
+            position: relative;
+            font-family: "chiavettieri";
+            font-weight: 400;
+            font-size: 40px;
+            margin: 40px;
+            padding: 30px;
+            cursor:pointer;
+            color: #000000;
+            }
+            
+            .quotes {
+            position: relative;
+            font-family: "chiavettieri";
+            font-weight: 400;
+            font-size: 28px;
+            margin: 40px;
+            padding: 30px;
+            cursor:pointer;
+            color: #000000;
+            width: 370px;
+            text-align: center;
+            }
+            
+            .medium {
+            position: relative;
+            font-family: "chiavettieri";
+            font-weight: 400;
+            font-size: 65px;
+            margin: 40px;
+            padding: 30px;
+            cursor:pointer;
+            color: #000000;
+            }
+            
+            .mulan:hover, #zenobia:hover, .trinh:hover {
+            color: #ff14cc;
+            }
+            
+            .mulan {
+                position: relative;
+                left: 35px;
+            }
+            
+            .imgmulan {
+            background-image: url("https://www.ueaa.org/ywlp/wp-content/uploads/2016/10/mulan-ANCIENT.jpg");
+            width: 600px;
+            height: 800px;
+            background-repeat: no-repeat;
+            top: 20px;
+            position: relative;
+            left: 70px;
+            }
+            
+            .imgzenobia {
+                background-image: url("http://images.mentalfloss.com/sites/default/files/styles/insert_main_wide_image/public/0438720.png");
+                width: 600px;
+                height: 400px;
+                position: relative;
+                top: 30px;
+            }
+            
+            .details {
+          font-family: "chiavettieri";
+          color: black;
+          font-size: 22px;
+          text-align: justify;
+          padding: 5px 10px 95px;
+          position: relative;
+          top: -33px;
+          width: 550px;
+          left: -10px;
+           -webkit-hyphens: auto;
+          -ms-hyphens: auto;
+           hyphens: auto;
+           margin: 40px;
+            }
+            
+            #zenobia {
+                position: relative;
+                left: 200px;
+                
+            }
+            
+            .detailszenobia {
+          font-family: "chiavettieri";
+          color: black;
+          font-size: 22px;
+          text-align: justify;
+          padding: 5px 10px 95px;
+          position: relative;
+          top: -33px;
+          width: 600px;
+          left: -10px;
+           -webkit-hyphens: auto;
+          -ms-hyphens: auto;
+           hyphens: auto;
+           margin: 40px;
+            }
+            
+            
+            .detailstrinh {
+          font-family: "chiavettieri";
+          color: black;
+          font-size: 22px;
+          text-align: justify;
+          padding: 5px 10px 95px;
+          position: relative;
+          top: -300px;
+          width: 500pxpx;
+          right: -800px;
+          
+           -webkit-hyphens: auto;
+          -ms-hyphens: auto;
+           hyphens: auto;
+          
+            }
+            
+        .trinh {
+         position: relative;
+         left: 800px;
+         top: -300px;
+        }
+            
+            
+        .imgtrinh {
+            background-image: url("https://i.pinimg.com/originals/3b/2b/f4/3b2bf4afe779b85aa2284a9e5c9ad19e.jpg");
+            width: 500px;
+            height: 500px;
+            background-repeat: no-repeat;
+            transform: scale(0.7);
+            top: -420px;
+            left: 300px;
+            position: relative;
+            
+        }
+        </style>
+        
+    </head>
+    
+    <body>
+        
+        <div class="small">
+        <p class ="mulan">Mulan</p>
+        <div class="details">
+        Hua Mulan is a legendary woman warrior from the Northern and Southern dynasties period (420-589) of Chinese history, originally described in the Ballad of Mulan.
+        In the ballad, Hua Mulan takes her aged father's place in the army. She is a beautiful and strong woman known for practicing martial arts and for being skilled with the sword. Mulan fought for twelve years and gained high merit, but she refused any reward and retired to her hometown.
+        
+        <div class="imgmulan">
+                
+        </div>
+        </div>
+        </div>
+        
+        <div class="medium">
+            <p id="zenobia">Zenobia</p>
+            <div class="detailszenobia">
+            In 267, Zenobia became the ruler of the Palmyrene Empire that is now Zyria. 
+            Within two years of her ascent, she was battling back the advances of Rome and expanding the boundaries of her kingdom by force, invading Egypt and Anatolia. Though an accomplished rider, she also showed a kinship with her army by walking miles upon miles in step with her foot soldiers.
+            She was truly their warrior queen.
+            
+            <div class="imgzenobia">
+                
+            </div>
+            </div>
+            </div>
+            
+        <div class="quotes">
+            <p class="Trinh">"I'd like to ride storms, kill sharks in the open sea, drive out the aggressors, reconquer the country, undo the ties of serfdom, and never bend my back to be the concubine of whatever man."</p>
+            <div class="detailstrinh">
+            Trieu Thi Trinh predated the French heroine by more than 1200 years. At 20 years old, 
+            She raised a following 1,000 strong, and urged her fellow Vietnamese to rebel against the Chinese forces that sought to conquer their homeland in the 3rd century.Her brother tried to dissuade her from revolt,
+            but her response was "Why should I imitate others, bow my head, stoop over and be a slave? Why resign myself to menial housework?"
+            
+            <div class="imgtrinh">
+                
+            </div>    
+            </div>
+            </div>    
+        
+        
+        <script type="text/javascript" src="jquery.js"></script>
+        <script type="text/javascript">
+        /* global $ */
+        
+        $(document).ready(function()
+        {
+  $(".details").hide();
+  $(".mulan").click(function()
+  {
+    $(this).next(".details").slideToggle(600);
+  });
+});
+
+
+$(document).ready(function()
+        {
+  $(".detailszenobia").hide();
+  $("#zenobia").click(function()
+  {
+    $(this).next(".detailszenobia").slideToggle(600);
+  });
+});
+
+
+$(document).ready(function()
+        {
+  $(".detailstrinh").hide();
+  $(".trinh").click(function()
+  {
+    $(this).next(".detailstrinh").slideToggle(600);
+  });
+});
+        
+        </script>
+        
+        
+    </body>
+    
+</html>
