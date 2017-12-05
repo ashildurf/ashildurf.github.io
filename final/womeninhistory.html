@@ -246,6 +246,18 @@ Discover through the cloud and be amazed.
             color: 000000;
             
         }
+        
+        #womeninhistory {
+         font-family: "chiavettieri";
+            font-weight: 700;
+            font-size: 85px;
+            margin: 40px;
+            top: 20px;
+            position: relative;
+            color: #000000;   
+        }
+        
+        
             
       </style>
         
@@ -321,7 +333,21 @@ Discover through the cloud and be amazed.
         <script>
         /* global $ */
         
-      
+      var text = 'Women In History'
+			
+			var textElements = text.split("").map(function(c) {
+			    return $('<span id="' + c + '">' + c + '</span>');
+			});
+			
+			var el = $('#someonespecial');
+            var delay = 150; // For different letter delays.
+            textElements.forEach(function(e, i) {
+            el.append(e);
+            e.hide();
+            setTimeout(function() {
+            e.fadeIn(100)
+            }, 100 + i * delay)
+            })
 
    
 
