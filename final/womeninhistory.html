@@ -7,9 +7,9 @@
         
          <header>
              
-            <a href="about.html">
-                <div class="link">
-                    <h1>WOMEN IN HISTORY</h1>
+            <a href="womeninhistory.html">
+                <div id="link">
+            
                   
                 </div>
                 </a>
@@ -57,6 +57,20 @@ Discover through the cloud and be amazed.
         }
         
         h1:hover {
+            color: #ff14cc;
+        }
+        
+        #link {
+           font-family: "chiavettieri";
+            font-weight: 700;
+            font-size: 85px;
+            margin: 40px;
+            top: 20px;
+            position: relative;
+            color: #000000; 
+        }
+        
+        #link:hover {
             color: #ff14cc;
         }
         
@@ -333,19 +347,19 @@ Discover through the cloud and be amazed.
         <script>
         /* global $ */
         
-      var text = 'Women In History'
+      var text = 'WOMEN IN HISTORY'
 			
 			var textElements = text.split("").map(function(c) {
 			    return $('<span id="' + c + '">' + c + '</span>');
 			});
 			
-			var el = $('#someonespecial');
-            var delay = 150; // For different letter delays.
+			var el = $('#link');
+            var delay = 200; // For different letter delays.
             textElements.forEach(function(e, i) {
             el.append(e);
             e.hide();
             setTimeout(function() {
-            e.fadeIn(100)
+            e.fadeIn(60)
             }, 100 + i * delay)
             })
 
