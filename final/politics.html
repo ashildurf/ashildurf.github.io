@@ -39,16 +39,16 @@
             
             
             .medium {
-            display: relative;
             font-family: "chiavettieri";
             font-weight: 400;
             font-size: 60px;
             margin: 30px;
+            width: 300px;
             position: relative;
             cursor:pointer;
             color: #000000;
-            list-style-type: none;
             
+        
             }
             
             .details {
@@ -98,7 +98,8 @@
          
             }
             
-          .pres:hover {
+          .pres:hover, .jin:hover, .bella:hover 
+          ,.roosevelt:hover, .adams:hover, .shirley:hover{
                 color: #ff14cc;
               
             }
@@ -109,18 +110,14 @@
               
           }
           
-          .roosevelt:hover {
-             color: #ff14cc; 
-          }
+    
           
           .roosevelt {
              position: relative;
              left: 200px;
           }
           
-          .adams:hover {
-              color: #ff14cc;
-          }
+         
           
           .adams {
               position: relative;
@@ -165,6 +162,102 @@
              
          }
          
+         .detailsshirley {
+           font-family: "chiavettieri";
+          font-size: 22px;
+          text-align: justify;
+          padding: 5px 10px 95px;
+          position: relative;
+          width: 500px;
+          left: 200px;
+          top: 260px;
+          
+           -webkit-hyphens: auto;
+          -ms-hyphens: auto;
+           hyphens: auto;   
+         } 
+         
+         .shirley {
+             position: relative;
+             top: 300px;
+             left: 300px;
+             
+             
+         }
+         
+         .imgshirley {
+             background-image: url("http://i789.photobucket.com/albums/yy172/thehlmn/chisholm-640.jpg__640x360_q85_crop_upscale.jpg");
+             width: 620px;
+             height: 300px;
+             transform: scale(0.8);
+             position: relative;
+             left: -60px;
+             top: -10px;
+         }
+         
+         .jin {
+             position: relative;
+             top: -800px;
+             left: 800px;
+         }
+         
+         .jindetails {
+          font-family: "chiavettieri";
+          font-size: 22px;
+          text-align: justify;
+          padding: 5px 10px 95px;
+          position: relative;
+          width: 500px;
+          top: -900px;
+          left: 700px;
+           -webkit-hyphens: auto;
+          -ms-hyphens: auto;
+           hyphens: auto;   
+         }
+           
+         .jinimg {
+         background-image: url("https://upload.wikimedia.org/wikipedia/commons/8/86/Qiujin.gif");
+         width: 200px;
+         height: 290px;
+         background-repeat: no-repeat;
+         top: -365px;
+         left: -200px;
+         position: relative;
+         }
+           
+           
+        .bellaimg {
+        background-image: url("https://d2vtranz59kxr8.cloudfront.net/sites/jwa.org/files/styles/artifacts/public/mediaobjects/bamega.jpg?itok=f7koz_0_");
+        width: 500px;
+        height: 450px;
+        background-repeat: no-repeat;
+        top: 13px;
+        position: relative;
+    
+            
+        }
+        
+        .belladetails {
+          font-family: "chiavettieri";
+          font-size: 22px;
+          text-align: justify;
+          position: relative;
+          width: 500px;
+          top: -800px;
+          left: 360px;
+          margin: 30px;
+          padding: 5px 10px 95px;
+         
+           -webkit-hyphens: auto;
+          -ms-hyphens: auto;
+           hyphens: auto;   
+         }
+         
+         .bella {
+         position: relative;
+         top: -700px; 
+         left: 500px;
+         }
             
         </style>
         
@@ -214,11 +307,46 @@
                 </div>
                     
                 
-                </div>
+              <div class="quotes">
+                  <p class="shirley">"If they don't give you a seat at the table bring a folding chair"</p>
+                  <div class="detailsshirley">
+                  Shirley Chisholm was an American politician, educator, and author.
+                  In 1968, she became the first black woman elected to the United States Congress,
+                  and she represented New York's 12th Congressional District for seven terms from 1969 to 1983. In 1972, she became the first black candidate for a major party's nomination for President of the United States, and the first woman to run for the Democratic Party's presidential nomination.
+                  In 2015, Chisholm was posthumously awarded the Presidential Medal of Freedom.
+                 <div class="imgshirley">
+                     
+                  </div> 
+                  </div>  
+                  </div>
+              
             
+            <div class="medium">
+                <p class="jin">Qui Jin</p>
+                <div class="jindetails">
+                 Qui Jin was a Chinese revolutionary, feminist, and writer in the 19th century.
+                 Qiu grew up in her ancestral home, Shanyin Village, Shaoxing, Zhejiang. During an unhappy marriage, Qiu came into contact with new ideas. She became a member of the Triads and Tongmenghui secret society
+                 who at the time advocated the overthrow of the Qing and restoration of Han Chinese governance.
+                 Qiu wrote a manifesto entitled "A Respectful Proclamation to China's 200 Million Women Comrades", where she lamented the problems caused by bound feet and oppressive marriages.
+                 Qiu was executed after a failed uprising against the Qing dynasty, and she is considered a national heroine in China.
+                 
+                  <div class="jinimg">
+                      
+                 </div>  
+                 </div>
+                 </div>
                 
-                
-         
+         <div class="medium">
+             <p class="bella">Anti-War </p>
+             <div class="belladetails">
+               Bella Abzug was an American lawyer, U.S. Representative, social activist and a leader of the Women's Movement.
+               With the start of the Vietnam War she became a vocal member of the anti-war movement. Once elected to Congress, in 1971 she took a "people's oath"
+               on the steps of the House after taking the official congressional oath of office. Known for her brash personality, she pushed for an end to the war, women's rights and the needs of underdogs.
+               <div class="bellaimg">
+                   
+               </div>
+               </div>
+               </div>
             
 
         
@@ -256,6 +384,34 @@ $(document).ready(function()
   });
 });
 
+
+$(document).ready(function()
+        {
+  $(".detailsshirley").hide();
+  $(".shirley").click(function()
+  {
+    $(this).next(".detailsshirley").slideToggle(600);
+  });
+});
+
+$(document).ready(function()
+        {
+  $(".jindetails").hide();
+  $(".jin").click(function()
+  {
+    $(this).next(".jindetails").slideToggle(600);
+  });
+});
+
+
+$(document).ready(function()
+        {
+  $(".belladetails").hide();
+  $(".bella").click(function()
+  {
+    $(this).next(".belladetails").slideToggle(600);
+  });
+});
 
 </script>
         
