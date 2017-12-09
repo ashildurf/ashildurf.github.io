@@ -60,6 +60,8 @@
            margin: 40px;
             }
             
+     
+            
            .detailssappho{
         font-family: "chiavettieri";
           color: black;
@@ -201,7 +203,6 @@
            margin: 40px;
            top: -380px;
            width: 600px;
-           
       }
       
       .alice {
@@ -222,11 +223,47 @@
        left: -290px;
        
       }
+      
+      .vivian {
+       position: relative;
+       top: -390px;
+       margin: 30px;
+      }
+      
+      .vivianimg {
+       position: relative;
+       background-image: url("http://iphf.org/wp-content/uploads/2016/08/06HEIR-master1050.jpg");
+       width: 900px;
+       height: 800px;
+       background-repeat: no-repeat;
+       top: -610px;
+       left: 350px;
+       transform: scale(0.5);
+      }
+      
+      .detailsvivian {
+          font-family: "chiavettieri";
+          font-size: 22px;
+          text-align: justify;
+          position: relative;
+          top: -420px;
+          width: 550px;
+          left: -10px;
+           -webkit-hyphens: auto;
+          -ms-hyphens: auto;
+           hyphens: auto;
+           margin: 40px;
+            }
+    
+    
+    
     
     .hilma:hover, .sappho:hover, .georgia:hover, 
-    .frida:hover, .alice:hover {
+    .frida:hover, .alice:hover, .vivian:hover {
      color: #ff14cc;
     }
+    
+    
     
     
     
@@ -292,12 +329,26 @@
               Alice Guy-Blache, born in 1873, was the first person to be a film director and writer of narrative fiction films.
               She experimented with Gaumont's Chronophone sound syncing system, color tinting, interracial casting, and special effects.
               In 1906, she directed Results of Feminism, in which genres are reversed, women play men and vice versa. 
-             
+    
              <div class="imgalice">
+              </div>
+              </div>
+              </div>
               
-             </div>
-             </div>
-             </div>
+              <div class="small">
+               <p class="vivian">The street photographer</p>
+               <div class="detailsvivian">
+                Vivian Dorothy Maier (born 1926) was an American street photographer. Maier worked for about forty years as a nanny, mostly in Chicago's North Shore, pursuing photography during her spare time. She took more than 150,000 photographs during her lifetime, primarily of the people and architecture of New York City, Chicago, and Los Angeles, although she also traveled and photographed worldwide.
+                During her lifetime, Maier's photographs were unknown and unpublished; many of her negatives were never printed. A Chicago collector, John Maloof, acquired some of Maier's photos in 2007
+                and published them online. since then, Maier's photographs have been exhibited in North America, Europe, Asia and 
+                South America while her life and work have been the subject of books and documentary films.
+                
+                <div class="vivianimg">
+                 
+                </div>
+              </div>
+              </div>
+             
         
         
         
@@ -352,6 +403,15 @@
      $(".alice").click(function()
      {
     $(this).next(".alicedetails").slideToggle(600);
+    });
+    });
+  
+  $(document).ready(function()
+        {
+     $(".detailsvivian").hide();
+     $(".vivian").click(function()
+     {
+    $(this).next(".detailsvivian").slideToggle(600);
     });
     });
   
