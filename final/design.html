@@ -42,6 +42,17 @@
             color: #000000;
             }
             
+            .large {
+            position: relative;
+            font-family: "chiavettieri";
+            font-weight: 400;
+            font-size: 60px;
+            margin: 40px;
+            padding: 30px;
+            cursor:pointer;
+            color: #000000;
+            }
+            
             .details {
           font-family: "chiavettieri";
           color: black;
@@ -163,7 +174,7 @@
             }
             
             
-            .detailsperriand {
+            .perrianddetails {
           font-family: "chiavettieri";
           color: black;
           font-size: 22px;
@@ -254,7 +265,7 @@
              </div>
              </div>
              
-        <div class="small">
+        <div class="large">
             <p class="eames">Eames</p>
             <div class="detailseames">
               Unquestionably, Ray Eames was THE most iconic female designer in modern design history. In a time when gender equality was lacking, her husband Charles noted: "Anything I can do, Ray can do better." Born and raised in Sacramento, Eames studied with the German Abstract Expressionist Hans Hofmann in New York City, and then continued her education at the Art Academy in Cranbrook, Michigan (where she met Charles). The couple worked together to create high quality objects at reasonable cost by using new materials and technology.
@@ -265,10 +276,9 @@
             </div>
             </div>
             
-            <div class="small">
+            <div class="medium">
                 <p class="perriand">Perriand</p>
-                <div class="perriand">
-                    <div class="detailsperriand">
+                    <div class="perrianddetails">
                         Known for her ability to carry through ideas and her familiarity with the metal technologies and tubular steel of the time, Charlotte Perriand embodied Ecole de l'Union Centrale des Arts Decoratifs' slogan of "Beauty in Utility." Originally rejected by the 20th century architectural icon Le Corbusier, Perriand transformed her rooftop apartment into an exhibit called "Bar in the Attic" - and then invited him to visit. Le Corbusier hired her on the spot and put her in charge of his furniture designs.
                     <div class="perriandimg">
                         
@@ -319,12 +329,13 @@ $(document).ready(function()
 
 $(document).ready(function()
         {
-  $(".detailsperriand").hide();
+  $(".perrianddetails").hide();
   $(".perriand").click(function()
   {
-    $(this).next(".detailsperriand").slideToggle(600);
+    $(this).next(".perrianddetails").slideToggle(600);
   });
-});   
+});
+ 
         </script>
         
      

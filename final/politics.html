@@ -6,6 +6,10 @@
         
         <style>
         
+        body {
+            position: relative;
+        }
+        
         
         p {
         padding: 0 0 1em;
@@ -101,7 +105,7 @@
             
           .pres:hover, .jin:hover, .bella:hover 
           ,.roosevelt:hover, .adams:hover, .shirley:hover
-          , .bethune:hover{
+          , .bethune:hover, .malala:hover{
                 color: #ff14cc;
               
             }
@@ -245,7 +249,7 @@
           text-align: justify;
           position: relative;
           width: 500px;
-          top: -240px;
+          top: -570px;
           left: 360px;
           margin: 30px;
           padding: 5px 10px 95px;
@@ -257,9 +261,8 @@
          
          .bella {
          position: relative;
-         top: -200px; 
+         top: -460px; 
          left: 500px;
-         margin: 30px;
          width: 300px;
          }
          
@@ -292,9 +295,44 @@
              background-repeat: no-repeat;
              left: 50px;
              position: relative;
-             
+            
+         }
+         
+         .malaladetails {
+          font-family: "chiavettieri";
+          font-size: 22px;
+          text-align: justify;
+          position: relative;
+          width: 690px;
+          margin: 30px;
+          padding: 5px 10px 95px;
+          top: -970px;
+          left: 350px;
+         
+           -webkit-hyphens: auto;
+          -ms-hyphens: auto;
+           hyphens: auto;   
+         }
+         
+         .malala {
+             top: -900px;
+             position: relative;
+             left: 400px;
+         }
+         
+         .malalaimg {
+             background-image: url("https://s-media-cache-ak0.pinimg.com/originals/b7/48/0c/b7480cdf28d3ff0bde2b28ecbeb2b743.jpg");
+             width: 950px;
+             height: 1100px;
+             background-repeat: no-repeat;
+             transform: scale(0.4);
+             position: relative;
+             top: -300px;
+             left: -100px;
              
          }
+         
+         
             
         </style>
         
@@ -398,6 +436,18 @@
                   </div>
                   </div>
                   </div>
+                  
+            <div class="small">
+                <p class="malala">The youngest Nobel Prize winner</p>
+                <div class="malaladetails">
+                 
+                Malala Yousafzai, born 1997, is a Pakistani activist for female education and the youngest Nobel Prize laureate.
+                She is known for human rights advocacy, especially the education of women and children in her native Swat Valley in Khyber Pakhtunkhwa, northwest Pakistan, where the local Taliban had at times banned girls from attending school. She was shot in the head by a Taliban and she remained unconscious and in critical condition at the Rawalpindi Institute of Cardiology, but later her condition improved enough for her to be sent to the Queen Elizabeth Hospital in Birmingham, UK. Her advocacy has grown into an international movement for women's rights and fighting terrorism.
+                <div class="malalaimg">
+                    
+                </div>
+                </div>
+                </div>
             
 
         
@@ -472,6 +522,16 @@ $(document).ready(function()
     $(this).next(".bethunedetails").slideToggle(600);
   });
 });
+
+$(document).ready(function()
+        {
+  $(".malaladetails").hide();
+  $(".malala").click(function()
+  {
+    $(this).next(".malaladetails").slideToggle(600);
+  });
+});
+
 
 </script>
         

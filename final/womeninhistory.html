@@ -80,6 +80,7 @@ Discover through the cloud and be amazed.
             position: relative;
             color: #000000;
             
+            
         }
         
         #today:hover {
@@ -100,8 +101,10 @@ Discover through the cloud and be amazed.
             color: #000000; 
         }
         
-        #link:hover {
+        #link:hover  {
             color: #ff14cc;
+            display: block; 
+        
         }
         
        h2 {
@@ -268,7 +271,7 @@ Discover through the cloud and be amazed.
                 
             }
             
-            #design:hover {
+            #design:hover, #philanthropy:hover {
                 color: #ff14cc;
             }
             
@@ -277,13 +280,7 @@ Discover through the cloud and be amazed.
                 top:280px;
             }
             
-            #philanthropy:hover {
-                color: #ff14cc;
-            }
-            
-            #mariecurie:hover {
-                color: #ff14cc;
-            }
+          
             
             /*Removes blue underline header*/
             
@@ -304,6 +301,30 @@ Discover through the cloud and be amazed.
         }
         
         
+        .womensymbol {
+            background-color: #ff14cc;
+            width: 10px;
+            height: 35px;
+            position: absolute;
+            top: 124px;
+            left: 169px;
+            opacity:0;
+            }
+        
+         .womensymbol:hover{
+            opacity:1;
+            }
+            
+        .womencross {
+            background-color: #ff14cc;
+            width: 37px;
+            height: 8px;
+            position: absolute;
+            top: 133px;
+            left: 156px;
+            
+        }
+        
             
       </style>
         
@@ -313,9 +334,15 @@ Discover through the cloud and be amazed.
     
     <body>
         
+       <div class="womensymbol">
+          
+       </div>
+       <div class="womencross">
+           
+       </div>
         
         
-        
+      
         
         
         <div>
@@ -393,7 +420,6 @@ Discover through the cloud and be amazed.
    
 
 
-       
       
   
 </script>
