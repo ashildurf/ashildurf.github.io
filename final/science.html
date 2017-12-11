@@ -94,7 +94,7 @@
             
             .marie:hover, .lovelace:hover, .mitchell:hover,
             .fossil:hover, .rosalind:hover, .noether:hover
-            ,.sibylla:hover{
+            ,.sibylla:hover, .balboa:hover{
                 color: #ff14cc;
             }
             
@@ -345,6 +345,38 @@
             
         }
         
+        .balboadetails {
+         font-family: "chiavettieri";
+          color: black;
+          font-size: 22px;
+          text-align: justify;
+          position: relative;
+          width: 650px;
+          top: -920px;
+          left: 700px;
+          
+           -webkit-hyphens: auto;
+          -ms-hyphens: auto;
+           hyphens: auto;   
+        }
+        
+        .balboaimg {
+            background-image: url("http://public.csusm.edu/becht004/cityparkpage/oldkatesessions.jpg");
+            background-repeat: no-repeat;
+            width:  390px;
+            height: 700px;
+            position: relative;
+            left: 140px;
+        }
+        
+        .balboa {
+            position: relative;
+            top: -900px;
+            left: 900px;
+        }
+        
+        
+        
     </style>
     
 </head>
@@ -446,6 +478,18 @@ Merian published her first book of natural illustrations, titled Neues Blumenbuc
         </div>
         </div>
         </div>
+        
+        <div class="small">
+            <p class="balboa">Balboa Park</p>
+            <div class="balboadetails">
+            Kate Session, born 1857, spent most of her childhood living in and around the towering trees of northern California. In 1881, she was the first woman to graduate from the University of California with a science degree, and shortly afterward she moved to San Diego
+            - at the time, a dry city with almost no plant life. 
+            Sessions arranged to lease 30 acres of land in City Park (now called Balboa Park) from the city, in exchange for planting 100 trees a year in the barren park, and 300 trees a year in the rest of San Diego. Today, her gardens and parks are still found throughout the city, and Sessions is known as "the Mother of Balboa Park."
+            <div class="balboaimg">
+                
+            </div>
+            </div>
+            </div>
     
     
     
@@ -529,6 +573,14 @@ $(document).ready(function()
   });
 });
      
+     $(document).ready(function()
+        {
+  $(".balboadetails").hide();
+  $(".balboa").click(function()
+  {
+    $(this).next(".balboadetails").slideToggle(600);
+  });
+});
         
         </script>
     

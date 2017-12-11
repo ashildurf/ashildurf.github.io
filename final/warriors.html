@@ -55,7 +55,8 @@
             }
             
             .mulan:hover, #zenobia:hover, .trinh:hover
-            , .cleopatra:hover{
+            , .cleopatra:hover, .artemisia:hover
+            , .grace:hover{
             color: #ff14cc;
             }
             
@@ -190,6 +191,71 @@
             
         }
         
+        .artemisia {
+            position: relative;
+            top: -600px;
+            left: 800px;
+        }
+        
+        .artemisiadetails {
+            font-family: "chiavettieri";
+          color: black;
+          font-size: 22px;
+          text-align: justify;
+          padding: 5px 10px 95px;
+          position: relative;
+          top: -630px;
+          left: 650px;
+          width: 500px;
+          
+           -webkit-hyphens: auto;
+          -ms-hyphens: auto;
+           hyphens: auto;
+        }
+        
+        .artemisiaimg {
+            background-image: url("http://images.mentalfloss.com/sites/default/files/styles/insert_main_wide_image/public/409098.png");
+            width: 600px;
+            height: 800px;
+            background-repeat: no-repeat;
+            position: relative;
+            top: 10px;
+            left: -30px;
+            }
+            
+            .graceimg {
+                background-image: url("https://i.pinimg.com/736x/d2/4c/85/d24c855f5df8a6220144972b42a14536--pirate-ship-drawing-school-design.jpg");
+                width: 900px;
+                height: 1100px;
+                background-repeat: no-repeat;
+                transform: scale(0.5);
+                position: relative;
+                top: -528px;
+                left: 300px;
+            }
+            
+            .gracedetails  {
+             font-family: "chiavettieri";
+          color: black;
+          font-size: 22px;
+          text-align: justify;
+          padding: 5px 10px 95px;
+          position: relative;
+          width: 500px;
+          top: -750px;
+          left: 450px;
+          
+           -webkit-hyphens: auto;
+          -ms-hyphens: auto;
+           hyphens: auto;   
+            }
+            
+            .grace {
+                position: relative;
+                top: -700px;
+                left: 500px;
+            }
+    
         </style>
         
     </head>
@@ -246,6 +312,29 @@
             </div>
             </div>
             </div>
+            
+        <div class="small">
+            <p class="artemisia">Artemisia</p>
+            <div class="artemisiadetails">
+              Artemisia was the 5th century BCE Queen of Halicarnassus, a kingdom that exists in modern-day Turkey. However, she was best known as a naval commander and ally of Xerxes, the King of Persia, in his invasion of the Greek city-states.
+              She made her mark on history in the Battle of Salamis, where the fleet she commanded was deemed the best against the Greeks. Greek historian Herodotus wrote of her heroics on this battlefield of the sea, painting her as a warrior who was decisive and incredibly intelligent in her strategies.
+            <div class="artemisiaimg">
+                
+            </div>
+            </div>
+            </div>
+            
+            <div class="medium">
+                <p class="grace">Pirate Queen</p>
+                <div class="gracedetails">
+                    Grace O'Malley was a Irish pirate warrior. 
+                    When her mother refused to let Grace set sail with her father, claiming the girl's long hair would get tangled in their ropes, the firebrand promptly chopped off her locks, earning passage on the voyage as well as the name that translates roughly to "bald."
+                    This bold woman ruled over the Umaill kingdom of Ireland, being chieftain of the O'Malley clan after her father. The ships she likewise inherited, she used for piracy.
+                <div class="graceimg">
+                    
+                </div>
+                </div>
+                </div>
         
         
         <script type="text/javascript" src="jquery.js"></script>
@@ -281,12 +370,32 @@ $(document).ready(function()
   });
 });
 
+
 $(document).ready(function()
         {
   $(".cleopatradetails").hide();
   $(".cleopatra").click(function()
   {
-    $(this).next(".cleopatra").slideToggle(600);
+    $(this).next(".cleopatradetails").slideToggle(600);
+  });
+});
+
+
+$(document).ready(function()
+        {
+  $(".artemisiadetails").hide();
+  $(".artemisia").click(function()
+  {
+    $(this).next(".artemisiadetails").slideToggle(600);
+  });
+});
+
+$(document).ready(function()
+        {
+  $(".gracedetails").hide();
+  $(".grace").click(function()
+  {
+    $(this).next(".gracedetails").slideToggle(600);
   });
 });
         

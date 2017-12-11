@@ -105,7 +105,7 @@
             
           .pres:hover, .jin:hover, .bella:hover 
           ,.roosevelt:hover, .adams:hover, .shirley:hover
-          , .bethune:hover, .malala:hover{
+          , .bethune:hover, .malala:hover, .zetian:hover{
                 color: #ff14cc;
               
             }
@@ -272,10 +272,10 @@
           text-align: justify;
           position: relative;
           width: 500px;
-          top: -150px;
-          left: 600px;
+          top: -1100px;
+          left: -34px;
           margin: 30px;
-          padding: 5px 10px 95px;
+        
          
            -webkit-hyphens: auto;
           -ms-hyphens: auto;
@@ -284,8 +284,8 @@
          
          .bethune {
              position: relative;
-             top: -40px;
-             left: 750px;
+             top: -990px;
+             left: -5px;
          }
          
          .bethuneimg {
@@ -332,7 +332,40 @@
              
          }
          
+         .zetian {
+             width: 500px;
+             position: relative;
+             top: -1000px;
+             left: 200px;
+             
+         }
          
+         .zetiandetails {
+          font-family: "chiavettieri";
+          font-size: 22px;
+          text-align: justify;
+          position: relative;
+          width: 690px;
+          margin: 30px;
+          padding: 5px 10px 95px;
+          top: -1100px;
+          
+         
+          -webkit-hyphens: auto;
+          -ms-hyphens: auto;
+           hyphens: auto;   
+         }
+         
+         .zetianimg {
+             background-image: url("https://vignette.wikia.nocookie.net/civilization/images/f/f6/Wu_Zetian_Picture.jpg/revision/latest/zoom-crop/width/480/height/480?cb=20140420064356");
+             width: 500px;
+             height: 600px;
+             background-repeat: no-repeat;
+             top: -45px;
+             position: relative;
+             transform: scale(0.8);
+             left: 80px;
+         }
             
         </style>
         
@@ -448,6 +481,17 @@
                 </div>
                 </div>
                 </div>
+                
+               <div class="medium">
+                   <p class="zetian">Wu Zetian</p>
+                   <div class="zetiandetails">
+                       Wu Zetian or 'Empress Wu', born 647, Wu was the sole officially recognized empress regnant of China in more than two millennia. 
+                       The importance to history of Wu Zetian's period of political and military leadership includes the major expansion of the Chinese empire, extending it far beyond its previous territorial limits, deep into Central Asia, and engaging in a series of wars on the Korean Peninsula, first allying with Silla against Goguryeo, and then against Silla over the occupation of former Goguryeo territory. Within China, besides the more direct consequences of her struggle to gain and maintain supreme power, Wu's leadership resulted in important effects regarding social class in Chinese society and in relation to state support for Taoism, Buddhism, education, and literature.
+                      <div class="zetianimg">
+                          
+                      </div> 
+                      </div>
+                      </div> 
             
 
         
@@ -529,6 +573,15 @@ $(document).ready(function()
   $(".malala").click(function()
   {
     $(this).next(".malaladetails").slideToggle(600);
+  });
+});
+
+$(document).ready(function()
+        {
+  $(".zetiandetails").hide();
+  $(".zetian").click(function()
+  {
+    $(this).next(".zetiandetails").slideToggle(600);
   });
 });
 

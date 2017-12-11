@@ -185,7 +185,7 @@
           -webkit-hyphens: auto;
           -ms-hyphens: auto;
            hyphens: auto;
-           top: -45px;
+           top: -380px;
            left: -10px;
            
             }
@@ -205,7 +205,7 @@
             height: 1000px;
             transform: scale(0.35);
             position: relative;
-            top: -660px;
+            top: -575px;
             left: 195px;
         
         }
@@ -216,8 +216,71 @@
             top: -350px;
         }
         
+        .lanvin {
+            position: relative;
+            top: -900px;
+            left: 970px;
+        }
+        
+        .lanvindetails {
+           font-family: "chiavettieri";
+          color: black;
+          font-size: 22px;
+          text-align: justify;
+          padding: 5px 10px 95px;
+          position: relative;
+          width: 400px;
+          -webkit-hyphens: auto;
+          -ms-hyphens: auto;
+           hyphens: auto;
+           top: -930px;
+           left: 820px; 
+        }
+        
+        .lanvinimg {
+            background-image: url("http://d.hprints.net/md/30/30933-jeanne-lanvin-1939-wedding-dress-fashion-photography-c-martin-hprints-com.jpg");
+            width: 400px;
+            height: 450px;
+            background-repeat: no-repeat;
+            position: relative;
+            left: 25px;
+            top: 10px;
+        }
+        
+        .zeiseldetails {
+           font-family: "chiavettieri";
+          color: black;
+          font-size: 22px;
+          text-align: justify;
+          padding: 5px 10px 95px;
+          position: relative;
+          width: 600px;
+          -webkit-hyphens: auto;
+          -ms-hyphens: auto;
+           hyphens: auto;
+           top: -780px;
+           left: 600px;
+           
+        }
+        
+        .zeisel {
+            position: relative;
+            top: -730px;
+            left: 800px;
+        }
+        
+        .zeiselimg {
+            background-image: url("https://www.evazeiseloriginals.com/wp-content/uploads/2015/05/eva_zeisel_101_double_vase_2.jpg");
+            width: 800px;
+            height: 800px;
+            background-repeat: no-repeat;
+            position: relative;
+            top: 10px;
+        }
+        
         .marion:hover, .deborah:hover, .chanel:hover, 
-            .eames:hover , .perriand:hover {
+            .eames:hover , .perriand:hover, .lanvin:hover
+            , .zeisel:hover {
             color: #ff14cc;
         } 
             
@@ -226,6 +289,8 @@
     </head>
     
     <body>
+        
+        
         
         <div class="small">
         <p class="marion">First licensed architect</p>  
@@ -285,7 +350,28 @@
                     </div>
                     </div>
                     </div>
+        
+        <div class="small">
+            <p class="lanvin">Lanvin</p>
+            <div class="lanvindetails">
+                Jeanne Lanvin was trained as a milliner and dressmaker and began making clothes for her daughter that were so beautiful, a number of wealthy people began requesting copies for their own children, and the designer happily obliged. 
+                Lanvin was born - a childrens wear label. Soon, though, mothers began requesting similar designs that they themselves could wear, and within years the business had grown to include womenswear, perfume and home design, making Lanvin the first designer to see the potential of a lifestyle brand.
+            <div class="lanvinimg">
+                
+            </div>
+            </div>
+            </div>
             
+            <div class="large">
+            <p class="zeisel">Zeizel</p>
+            <div class="zeiseldetails">
+                Eva Zeizel was a Hungarian-born American industrial designer known for her work with ceramics, primarily from the period after she migrated to the United States. Her forms are often abstractions of the natural world and human relationships.
+                She is most famous for popularizing ceramics and being the first woman to have a solo exhibit at the MOMA, with her 1946 exhibition "Modern China."
+                <div class="zeiselimg">
+                    
+            </div>
+            </div>
+            </div>
         
     <script type="text/javascript" src="jquery.js"></script>
         <script type="text/javascript">
@@ -333,6 +419,24 @@ $(document).ready(function()
   $(".perriand").click(function()
   {
     $(this).next(".perrianddetails").slideToggle(600);
+  });
+});
+
+$(document).ready(function()
+        {
+  $(".lanvindetails").hide();
+  $(".lanvin").click(function()
+  {
+    $(this).next(".lanvindetails").slideToggle(600);
+  });
+});
+
+$(document).ready(function()
+        {
+  $(".zeiseldetails").hide();
+  $(".zeisel").click(function()
+  {
+    $(this).next(".zeiseldetails").slideToggle(600);
   });
 });
  
