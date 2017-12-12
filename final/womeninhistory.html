@@ -398,19 +398,24 @@ Discover through the cloud and be amazed.
    
 $("#link").hover(
     function () {
+        event.preventDefault();
        $("#womensymbol").css("visibility","visible");
     },
     function () {
+        event.preventDefault();
        $("#womensymbol").css("visibility","hidden");
     }
+    
  );
  
     
 $("#link").hover(
     function () {
+        event.preventDefault();
        $("#womencross").css("visibility","visible");
     },
     function () {
+        event.preventDefault();
        $("#womencross").css("visibility","hidden");
     }
  );

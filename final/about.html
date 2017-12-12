@@ -128,18 +128,22 @@
    
        $("h1").hover(
     function () {
+        event.preventDefault();
        $("#womencross").css("visibility","visible");
     },
     function () {
+        event.preventDefault();
        $("#womencross").css("visibility","hidden");
     }
  );
  
  $("h1").hover(
     function () {
+        event.preventDefault();
        $("#womensymbol").css("visibility","visible");
     },
     function () {
+        event.preventDefault();
        $("#womensymbol").css("visibility","hidden");
     }
  );
