@@ -3,34 +3,555 @@
     <title>Women Today</title>
     
     <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+       <link rel="stylesheet" href="https://use.typekit.net/urm4mgo.css">
         
-        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
         
         <h1>WOMEN TODAY</h1>
         
+        <div class="womensymbol"> 
+        <div class="womencross">
+        </div>
+        </div>
+        
+        <a href="womeninhistory.html"> 
+        <div class="logo">
+            <p>O</p>
+             </div> </a>
+            <div class="logotwo"> 
+                <div class="logoone">
+                </div>
+            </div>
+            
+            <div id="doughnuts"></div>
+            
+            
+            
+    
+    <a href="#underage"> 
+    <div id="scroll">
+      </div>
+       </a>
+        
         <style>
         
-        
-        
-        
+
             h1 {
-           font-family: "chiavettieri";
+            font-family: "chiavettieri";
+            text-align: center;
             font-weight: 700;
-            font-size: 81px;
-            margin: 40px;
-            top: 20px;
-            position: relative;
+            font-size: 70px;
+            top: 210px;
+            position: absolute;
             color: #000000; 
+            z-index: 1;
+            text-align: center;
+            left: 420px;
+            color: white;
         }
+        
+        .logo {
+          font-family: "chiavettieri";
+          font-weight: 700;
+          font-size: 39px;
+          position: absolute;
+          z-index: 1;
+          color: white;
+          left: 34px;
+          top: -5px;
+         
+        }
+        
+        .womensymbol {
+            width: 10px;
+            height: 35px;
+            background-color: white;
+            position: absolute;
+            z-index: 1;
+            top: 310px;
+            left: 523px;
+        }
+        
+        .womencross {
+            background-color:white;
+            width: 37px;
+            height: 8px;
+            position: absolute;
+            top: 9px;
+            left: -13px;
+        }
+        
+        .logoone {
+            width: 7px;
+            height: 29px;
+            background-color: white;
+            position: absolute;
+            z-index: 1;
+            top: -10px;
+            left: 12px;
+        }
+        
+        .logotwo {
+            background-color:white;
+            width: 32px;
+            height: 6px;
+            position: absolute;
+            top: 73px;
+            left: 34px;
+            z-index: 1;
+            transform: scale(0.9);
+            
+        }
+        
+        #scroll {
+            background-image: url("https://www.vanhuizenhomes.com/wp-content/themes/vhh/images/icon-down.png");
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            z-index: 1;
+            background-repeat: no-repeat;
+            transform: scale(0.3);
+            left: 150px;
+            top: 380px;
+            
+        }
+        
+        #underagetext {
+            font-family: "chiavettieri";
+            font-weight: 400;
+            font-size: 40px;
+            color: white;
+            -webkit-hyphens: auto;
+            -ms-hyphens: auto;
+            hyphens: auto;
+            top: 1900px;
+            position: absolute;
+            width: 500px;
+            z-index: 1;
+            left: 50px;
+            
+        }
+        
+        #educationtext {
+          font-family: "chiavettieri";  
+          font-weight: 400;
+          font-size: 35px;
+          color: white;
+          -webkit-hyphens: auto;
+            -ms-hyphens: auto;
+            hyphens: auto;
+            position: absolute;
+            width: 500px;
+            z-index: 1;
+            top: 1100px;
+            left: 30px;
+        }
+        
+        #wagegaptext {
+          font-family: "chiavettieri";  
+          font-weight: 400;
+          font-size: 30px;
+          color: white;
+          -webkit-hyphens: auto;
+            -ms-hyphens: auto;
+            hyphens: auto;
+            position: absolute;
+            width: 500px;
+            z-index: 1;
+            top: 2830px;
+           left: 20px;
+        }
+        
+        
+        body {
+            height: 100%;
+        }
+        
+        
+        #underage {
+            background-image: url("https://timedotcom.files.wordpress.com/2017/05/13-anja-niedringhaus-award-child-bride-yemen.jpg?quality=85");
+            width: 100%;
+            height: 100%;
+            background-repeat: no-repeat;
+            background-position: center;
+            position: absolute;
+            background-size: cover;
+            -webkit-filter: grayscale(100%);
+            filter: grayscale(100%);
+            z-index: -1;
+            background-attachment: fixed;
+            min-height: 330%;
+            
+        }
+        
+        #protest {
+            background-image: url("https://cdn.vox-cdn.com/uploads/chorus_asset/file/7847439/GettyImages_632295976.jpg");
+            width: 100%;
+            height: 100%;
+            background-repeat: no-repeat;
+            background-position: center;
+            position: absolute;
+            background-size: cover;
+            background-attachment: fixed;
+            min-height: 100%;
+            filter: grayscale(100%);
+            
+        }
+        
+        #education {
+            background-image: url("https://gemreportunesco.files.wordpress.com/2012/03/200186.jpeg");
+            width: 100%;
+            height: 100%;
+            background-repeat: no-repeat;
+            background-position: center;
+            position: absolute;
+            background-size: cover;
+            background-attachment: fixed;
+            min-height: 220%;
+            filter: grayscale(100%);
+        }
+        
+        #wagegap {
+            background-image: url("http://prod-upp-image-read.ft.com/436715ce-1887-11e4-933e-00144feabdc0");
+            width: 100%;
+            height: 100%;
+            background-repeat: no-repeat;
+            background-position: center;
+            position: absolute;
+            background-size: cover;
+            background-attachment: fixed;
+            min-height: 430%;
+            z-index: -1;
+            filter: grayscale(100%);
+            
+        }
+        
+        #change {
+            background-image: url("https://lahjoita.plan.fi/image/bu60-viestint/tyttjen-piv-uutiskirjeeseen.jpg");
+            width: 100%;
+            height: 100%;
+            background-repeat: no-repeat;
+            background-position: center;
+            position: absolute;
+            background-size: cover;
+            background-attachment: fixed;
+            z-index: -1;
+            filter: grayscale(100%);
+            min-height: 630%;
+        }
+        
+        
+        
+        p {
+            width: 100%;
+            z-index: 1;
+            position: absolute;
+            
+        }
+        
+      body {
+          font-family: "chiavettieri";
+          font-weight: 400;
+      }
+        
+        var {
+            z-index: 1;
+            position: relative;
+            font-family: "chiavettieri";
+         
+            
+        }
+        
+        innerHTML {
+            z-index: 1;
+            position: absolute;
+            font-family: "chiavettieri";
+            font-weight: 400;
+            font-size: 90px;
+            color: blue;
+            
+        }
+        
+        #doughnuts {
+            color: blue;
+            font-size: 60px;
+            position: absolute;
+            z-index: 1;
+            top: 2380px;
+            text-align: center;
+            font-weight: 700;
+            color: white;
+            left: 340px;
+        }
+        
+        
+        h2 {
+            font-family: "chiavettieri";
+            text-align: center;
+            font-weight: 700;
+            font-size: 50px;
+            top: 3670px;
+            position: absolute;
+            color: #000000; 
+            z-index: 1;
+            text-align: center;
+            left: 420px;
+            color: white;
+        }
+        
+        h5 {
+            font-family: "chiavettieri";
+            text-align: center;
+            font-weight: 400;
+            font-size: 30px;
+            top: 3670px;
+            position: absolute;
+            color: #000000; 
+            z-index: 1;
+            text-align: center;
+            padding: 60px;
+            color: white;
+        }
+        
+        h3 {
+            font-family: "chiavettieri";
+            text-align: center;
+            font-weight: 700;
+            font-size: 30px;
+            top: 3960px;
+            position: absolute;
+            color: #000000; 
+            z-index: 1;
+            left: 600px;
+            
+            color: white;
+        }
+        
+        h4 {
+            font-family: "chiavettieri";
+            font-weight: 400;
+            font-size: 20px;
+            top: 3999px;
+            position: absolute;
+            color: #000000; 
+            z-index: 1;
+            text-align: center;
+            left: 540px;
+            width: 400px;
+            color: white;
+            text-align: center;
+            -webkit-hyphens: auto;
+          -ms-hyphens: auto;
+           hyphens: auto; 
+           
+        }
+        
+        h6 {
+            font-family: "chiavettieri";
+            text-align: center;
+            font-weight: 700;
+            font-size: 30px;
+            top: 4110px;
+            position: absolute;
+            color: #000000; 
+            z-index: 1;
+            left: 600px;
+            
+            color: white;
+        }
+        
+        h7 {
+            font-family: "chiavettieri";
+            font-weight: 400;
+            font-size: 20px;
+            top: 4220px;
+            position: absolute;
+            color: #000000; 
+            z-index: 1;
+            text-align: center;
+            left: 540px;
+            width: 400px;
+            color: white;
+            text-align: center;
+            -webkit-hyphens: auto;
+          -ms-hyphens: auto;
+           hyphens: auto; 
+           
+        }
+        
+        .endlogo {
+          font-family: "chiavettieri";
+          font-weight: 700;
+          font-size: 200px;
+          position: absolute;
+          z-index: 1;
+          color: white;
+          left: 670px;
+          top: 4200px;
+       
+         
+        }
+        
+        .endwomensymbol {
+            width: 25px;
+            height: 170px;
+            background-color: white;
+            position: absolute;
+            z-index: 1;
+            top: 4554px;
+            left: 738px;
+        }
+        
+        .endwomencross {
+            background-color:white;
+            width: 100px;
+            height: 25px;
+            position: absolute;
+            top: 4600px;
+            left: 700px;
+            z-index: 1;
+        }
+        
+        .logolastpage {
+            width: 7px;
+            height: 30px;
+            background-color: white;
+            position: absolute;
+            z-index: 1;
+            top: 3755px;
+            left: 482px;
+        }
+        
+        .logolastpagetwo {
+            background-color:white;
+            width: 30px;
+            height: 5px;
+            position: absolute;
+            top: 3765px;
+            left: 471px;
+            z-index: 1;
+        }
+        
+        
         </style>
+        
+       
+        
+       
         
     </head>
     
     <body>
         
+        <div class="endlogo">
+            <p>O</p>
+             </div> </a>
+            <div class="endwomensymbol">  </div>
+            <div class="endwomencross">
+                </div>
+           
+        <div class="logolastpage"> </div>
+            <div class="logolastpagetwo">
+                
+            </div>
+   
+        
+        
+        <div id="change">
+         <h2>YOU Can Make a Change</h2> 
+         <h5>Investing in secondary schooling for girls is the most cost-effective and best investment against climate change, world piece and HIV.</h5>
+         
+         <a href="https://www.malala.org/"> 
+         <h3>Malala Foundation</h3>
+         <h4>Working in regions where the most girls miss out on secondary education.
+         Click on the text to learn more.</h4>
+         </a>
+        </div>
+        
+        <a href="https://www.gatesfoundation.org/">
+            
+            <h6>Gates Foundation</h6>
+            <h7>Working towards inequity by investing in women's education, providing the poor with finance technology and more.</h7>
+        </a>
+        
+        <div id="wagegap">
+          <div id="wagegaptext">
+              <p>In the U.S. women earn just 79 cents
+              for every dollar made by men, for the same work.
+              
+              <br> <br> <br> <br> <br> 
+              Nearly 40 percent of the wage gap cannot be explained by occupation, work experience, race or union membership.
+              <br> <br> <br> <br> <br>
+              The wage gap exists within all racial and ethnic groups, however, 
+              women of color are most severely effected.
+              
+              </p>
+          </div>
+        </div>
+        
+        <div id="underage">
+        <div id="underagetext">
+        <p>Each year, 15 million girls are married
+         <br>before the age of 18.  <br> <br>
+         That's 28 girls <br>every minute.<br>
+         <br>
+         1 every 2 second. 
+         </p> 
+         
+            </div>
+        </div>
+        
+        <div id="education">
+        <div id="educationtext">
+        <p>More than 130 million women globally, are not getting any education. <br>
+        <br>
+        
+        There are more than 20 countries that
+        discriminate against female education. <br>
+        
+        <br>
+        
+        2/3 of the 774 million illiterate people in the world are female.
+        <br>
+        <br>
+        A girl who completes primary school is three times less likely to contract HIV.
+        
+        </p>
+            </div>
+        </div>
+        
+        <div id="protest">
+        </div>
+        
+        
+    
     
         
     </body>
+    
+    <script>
+     /* global $ */
+     
+        $(function() {
+            $('a[href*=#]').on('click', function(e) { 
+                e.preventDefault();
+                $('html, body').animate({ scrollTop:
+                $($(this).attr('href')).offset().top}, 500, 'linear'); 
+                
+            });
+            });
+            
+          var doughnut = 0;
+     window.setInterval(
+     function () {
+         doughnut = doughnut + 1;
+         document.getElementById("doughnuts").innerHTML = "That's " + doughnut + " girls just now";
+
+        }, 2000);
+            
+            
+    </script>
     
 </html>

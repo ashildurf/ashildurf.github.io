@@ -8,9 +8,48 @@
     <link rel="icon" href="favicon.ico" type="image/x-icon">
         
         <link rel="stylesheet" href="https://use.typekit.net/urm4mgo.css">
+       
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+       
+       <a href ="womeninhistory.html">
+                <div id="logo">
+            </div>
+                </a>
+        
         
     <style>
     
+    
+    #logo {
+            background-image: url("https://github.com/ashildurf/ashildurf.github.io/blob/master/final/photos/womenhistorylogo.png?raw=true");
+            width: 600px;
+            height: 1000px;
+            background-repeat: no-repeat;
+            transform: scale(0.05);
+            position: absolute;
+         top: -450px;
+            left: -250px;
+        }
+        
+        #womensymbol {
+            background-color: #ff14cc;
+            width: 10px;
+            height: 35px;
+            position: absolute;
+            top: 153px;
+            left: 714px;
+            transform: scale(0.8);
+            
+            }
+    
+        #womencross {
+            background-color:#ff14cc;
+            width: 37px;
+            height: 8px;
+            position: absolute;
+            top: 9px;
+            left: -13px;
+        }
     
     .about {
       font-family: "chiavettieri";
@@ -30,20 +69,41 @@
             font-family: "chiavettieri";
             font-weight: 400;
             font-style: normal;
-            font-size: 30px;
+            font-size: 25px;
             left: 530px; 
             top: 120px;
             position: relative;
             text-align: justify;
-            width: 700px;
+            width: 400px;
+            left: 800px;
         } 
+        
         
         body {
             margin: 90px;
         }
         
+         h1 {
+           font-family: "chiavettieri";
+            font-weight: 700;
+            font-size: 60px;
+            margin: 40px;
+            top: 20px;
+            position: relative;
+            color: #000000; 
+            text-align: center;
+        }
         
+        p {
+        position: relative;
+        left: 320px;
+        width: 600px;
+        text-align: justify;
+        }
         
+        h1:hover {
+             color: #ff14cc;
+        }
         
     </style>
         
@@ -51,13 +111,40 @@
            
            <body> 
            
-          
+            <div id="womensymbol">
+           <div id="womencross">
+           </div>
+       </div>
+           
+        <h1>ABOUT</h1>
            
         <div class="about">
         <p>This website was made in the class Creative Computing, Fall 2017 at Parsons 
-        by Ashildur Fridriks. For further information, you can contact me at frida420@newschool.edu </p>   
+        by Ashildur Fridriks. For further information or if you have any questions feel free to contact me by email at frida420@newschool.edu </p>   
         </div>
    
+            <script>
+        /* global $ */
+   
+       $("h1").hover(
+    function () {
+       $("#womencross").css("visibility","visible");
+    },
+    function () {
+       $("#womencross").css("visibility","hidden");
+    }
+ );
+ 
+ $("h1").hover(
+    function () {
+       $("#womensymbol").css("visibility","visible");
+    },
+    function () {
+       $("#womensymbol").css("visibility","hidden");
+    }
+ );
+ 
+   </script>
     
 
     
